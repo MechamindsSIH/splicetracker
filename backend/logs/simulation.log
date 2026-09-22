@@ -1,0 +1,24 @@
+2026-09-03T08:57:48 | INFO     | app.simulation                 | _run_simulation      | Simulation started: splices=5, interval=10.0s, anomaly_prob=0.15
+2026-09-03T09:00:52 | INFO     | app.simulation                 | _run_simulation      | Simulation stopped after 19 cycles
+2026-09-04T13:25:38 | INFO     | app.simulation                 | _run_simulation      | Simulation started: splices=5, interval=10.0s, anomaly_prob=0.15
+2026-09-04T14:24:32 | ERROR    | app.simulation                 | _run_simulation      | Simulation cycle 352 error: (sqlite3.OperationalError) database is locked
+[SQL: INSERT INTO inspections (splice_id, completed_at, status, results_json) VALUES (?, ?, ?, ?) RETURNING id, started_at]
+[parameters: (2, None, 'IN_PROGRESS', None)]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2026-09-04T14:24:49 | ERROR    | app.simulation                 | _run_simulation      | Simulation cycle 353 error: (sqlite3.OperationalError) database is locked
+[SQL: INSERT INTO inspections (splice_id, completed_at, status, results_json) VALUES (?, ?, ?, ?) RETURNING id, started_at]
+[parameters: (1, None, 'IN_PROGRESS', None)]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2026-09-04T14:25:06 | ERROR    | app.simulation                 | _run_simulation      | Simulation cycle 354 error: (sqlite3.OperationalError) database is locked
+[SQL: INSERT INTO inspections (splice_id, completed_at, status, results_json) VALUES (?, ?, ?, ?) RETURNING id, started_at]
+[parameters: (2, None, 'IN_PROGRESS', None)]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2026-09-04T14:25:24 | ERROR    | app.simulation                 | _run_simulation      | Simulation cycle 355 error: (sqlite3.OperationalError) database is locked
+[SQL: INSERT INTO inspections (splice_id, completed_at, status, results_json) VALUES (?, ?, ?, ?) RETURNING id, started_at]
+[parameters: (1, None, 'IN_PROGRESS', None)]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2026-09-04T14:26:10 | INFO     | app.simulation                 | _run_simulation      | Simulation started: splices=5, interval=10.0s, anomaly_prob=0.15
+2026-09-04T14:35:23 | INFO     | app.simulation                 | _run_simulation      | Simulation started: splices=5, interval=10.0s, anomaly_prob=0.15
+2026-09-18T10:40:05 | INFO     | app.simulation                 | _run_simulation      | Simulation started: splices=5, interval=10.0s, anomaly_prob=0.15
+2026-09-20T13:59:30 | INFO     | app.simulation                 | _run_simulation      | Simulation started: splices=5, interval=10.0s, anomaly_prob=0.15
+2026-09-21T14:07:41 | INFO     | app.simulation                 | _run_simulation      | Simulation started: splices=5, interval=10.0s, anomaly_prob=0.15

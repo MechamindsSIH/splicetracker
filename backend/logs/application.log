@@ -1,0 +1,150 @@
+2026-09-03T08:57:48 | INFO     | root                           | setup_logging        | Logging configured: level=INFO, dir=logs
+2026-09-03T08:57:48 | INFO     | app.main                       | lifespan             | SpliceTracker starting up
+2026-09-03T08:57:48 | INFO     | app.main                       | lifespan             | Database initialized
+2026-09-03T08:57:48 | INFO     | app.main                       | lifespan             | Event bus ready (11 event types)
+2026-09-03T08:57:48 | INFO     | app.main                       | lifespan             | WebSocket heartbeat started (interval=5s)
+2026-09-03T08:57:48 | INFO     | app.main                       | lifespan             | SIMULATION_MODE is enabled — starting simulation
+2026-09-03T08:57:48 | INFO     | app.main                       | lifespan             | Frames directory: data/frames
+2026-09-03T08:57:48 | INFO     | app.main                       | lifespan             | SpliceTracker ready
+2026-09-03T08:57:48 | INFO     | app.simulation                 | _run_simulation      | Simulation started: splices=5, interval=10.0s, anomaly_prob=0.15
+2026-09-03T09:00:20 | INFO     | app.api.websocket              | connect              | WebSocket client connected. Total: 1
+2026-09-03T09:00:21 | INFO     | app.api.websocket              | connect              | WebSocket client connected. Total: 2
+2026-09-03T09:00:34 | INFO     | app.api.websocket              | disconnect           | WebSocket client disconnected. Total: 1
+2026-09-03T09:00:34 | INFO     | app.api.websocket              | disconnect           | WebSocket client disconnected. Total: 0
+2026-09-03T09:00:48 | INFO     | app.api.websocket              | connect              | WebSocket client connected. Total: 1
+2026-09-03T09:00:49 | INFO     | app.api.websocket              | connect              | WebSocket client connected. Total: 2
+2026-09-03T09:00:52 | INFO     | app.simulation                 | _run_simulation      | Simulation stopped after 19 cycles
+2026-09-03T09:09:36 | INFO     | app.api.websocket              | disconnect           | WebSocket client disconnected. Total: 1
+2026-09-03T09:09:36 | INFO     | app.api.websocket              | disconnect           | WebSocket client disconnected. Total: 0
+2026-09-03T09:09:42 | INFO     | app.api.websocket              | connect              | WebSocket client connected. Total: 1
+2026-09-03T09:09:42 | INFO     | app.api.websocket              | connect              | WebSocket client connected. Total: 2
+2026-09-03T09:13:39 | INFO     | app.api.websocket              | disconnect           | WebSocket client disconnected. Total: 1
+2026-09-03T09:13:39 | INFO     | app.api.websocket              | disconnect           | WebSocket client disconnected. Total: 0
+2026-09-03T09:13:45 | INFO     | app.api.websocket              | connect              | WebSocket client connected. Total: 1
+2026-09-03T09:13:45 | INFO     | app.api.websocket              | connect              | WebSocket client connected. Total: 2
+2026-09-03T09:17:42 | INFO     | app.api.websocket              | disconnect           | WebSocket client disconnected. Total: 1
+2026-09-03T09:17:42 | INFO     | app.api.websocket              | disconnect           | WebSocket client disconnected. Total: 0
+2026-09-03T09:17:48 | INFO     | app.api.websocket              | connect              | WebSocket client connected. Total: 1
+2026-09-03T09:17:49 | INFO     | app.api.websocket              | connect              | WebSocket client connected. Total: 2
+2026-09-03T09:24:45 | INFO     | app.api.websocket              | disconnect           | WebSocket client disconnected. Total: 1
+2026-09-03T09:24:45 | INFO     | app.api.websocket              | disconnect           | WebSocket client disconnected. Total: 0
+2026-09-03T09:24:51 | INFO     | app.api.websocket              | connect              | WebSocket client connected. Total: 1
+2026-09-03T09:24:52 | INFO     | app.api.websocket              | connect              | WebSocket client connected. Total: 2
+2026-09-03T09:28:48 | INFO     | app.api.websocket              | disconnect           | WebSocket client disconnected. Total: 1
+2026-09-03T09:28:48 | INFO     | app.api.websocket              | disconnect           | WebSocket client disconnected. Total: 0
+2026-09-03T09:28:54 | INFO     | app.api.websocket              | connect              | WebSocket client connected. Total: 1
+2026-09-03T09:28:54 | INFO     | app.api.websocket              | connect              | WebSocket client connected. Total: 2
+2026-09-04T13:25:38 | INFO     | root                           | setup_logging        | Logging configured: level=INFO, dir=logs
+2026-09-04T13:25:38 | INFO     | app.main                       | lifespan             | SpliceTracker starting up
+2026-09-04T13:25:38 | INFO     | app.main                       | lifespan             | Database initialized
+2026-09-04T13:25:38 | INFO     | app.main                       | lifespan             | Event bus ready (11 event types)
+2026-09-04T13:25:38 | INFO     | app.main                       | lifespan             | WebSocket heartbeat started (interval=5s)
+2026-09-04T13:25:38 | INFO     | app.main                       | lifespan             | SIMULATION_MODE is enabled — starting simulation
+2026-09-04T13:25:38 | INFO     | app.main                       | lifespan             | Frames directory: data\frames
+2026-09-04T13:25:38 | INFO     | app.main                       | lifespan             | SpliceTracker ready
+2026-09-04T13:25:38 | INFO     | app.simulation                 | _run_simulation      | Simulation started: splices=5, interval=10.0s, anomaly_prob=0.15
+2026-09-04T13:31:37 | INFO     | app.api.websocket              | connect              | WebSocket client connected. Total: 1
+2026-09-04T13:31:37 | INFO     | app.api.websocket              | connect              | WebSocket client connected. Total: 2
+2026-09-04T14:24:32 | ERROR    | app.simulation                 | _run_simulation      | Simulation cycle 352 error: (sqlite3.OperationalError) database is locked
+[SQL: INSERT INTO inspections (splice_id, completed_at, status, results_json) VALUES (?, ?, ?, ?) RETURNING id, started_at]
+[parameters: (2, None, 'IN_PROGRESS', None)]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2026-09-04T14:24:49 | ERROR    | app.simulation                 | _run_simulation      | Simulation cycle 353 error: (sqlite3.OperationalError) database is locked
+[SQL: INSERT INTO inspections (splice_id, completed_at, status, results_json) VALUES (?, ?, ?, ?) RETURNING id, started_at]
+[parameters: (1, None, 'IN_PROGRESS', None)]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2026-09-04T14:25:06 | ERROR    | app.simulation                 | _run_simulation      | Simulation cycle 354 error: (sqlite3.OperationalError) database is locked
+[SQL: INSERT INTO inspections (splice_id, completed_at, status, results_json) VALUES (?, ?, ?, ?) RETURNING id, started_at]
+[parameters: (2, None, 'IN_PROGRESS', None)]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2026-09-04T14:25:24 | ERROR    | app.simulation                 | _run_simulation      | Simulation cycle 355 error: (sqlite3.OperationalError) database is locked
+[SQL: INSERT INTO inspections (splice_id, completed_at, status, results_json) VALUES (?, ?, ?, ?) RETURNING id, started_at]
+[parameters: (1, None, 'IN_PROGRESS', None)]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2026-09-04T14:26:10 | INFO     | root                           | setup_logging        | Logging configured: level=INFO, dir=logs
+2026-09-04T14:26:10 | INFO     | app.main                       | lifespan             | SpliceTracker starting up
+2026-09-04T14:26:10 | INFO     | app.main                       | lifespan             | Database initialized
+2026-09-04T14:26:10 | INFO     | app.main                       | lifespan             | Event bus ready (11 event types)
+2026-09-04T14:26:10 | INFO     | app.main                       | lifespan             | WebSocket heartbeat started (interval=5s)
+2026-09-04T14:26:10 | INFO     | app.main                       | lifespan             | SIMULATION_MODE is enabled — starting simulation
+2026-09-04T14:26:10 | INFO     | app.main                       | lifespan             | Frames directory: data\frames
+2026-09-04T14:26:10 | INFO     | app.main                       | lifespan             | SpliceTracker ready
+2026-09-04T14:26:10 | INFO     | app.simulation                 | _run_simulation      | Simulation started: splices=5, interval=10.0s, anomaly_prob=0.15
+2026-09-04T14:26:13 | INFO     | app.api.websocket              | connect              | WebSocket client connected. Total: 1
+2026-09-04T14:35:23 | INFO     | root                           | setup_logging        | Logging configured: level=INFO, dir=logs
+2026-09-04T14:35:23 | INFO     | app.main                       | lifespan             | SpliceTracker starting up
+2026-09-04T14:35:23 | INFO     | app.main                       | lifespan             | Database initialized
+2026-09-04T14:35:23 | INFO     | app.main                       | lifespan             | Event bus ready (11 event types)
+2026-09-04T14:35:23 | INFO     | app.main                       | lifespan             | WebSocket heartbeat started (interval=5s)
+2026-09-04T14:35:23 | INFO     | app.main                       | lifespan             | SIMULATION_MODE is enabled — starting simulation
+2026-09-04T14:35:23 | INFO     | app.main                       | lifespan             | Frames directory: data\frames
+2026-09-04T14:35:23 | INFO     | app.main                       | lifespan             | SpliceTracker ready
+2026-09-04T14:35:23 | INFO     | app.simulation                 | _run_simulation      | Simulation started: splices=5, interval=10.0s, anomaly_prob=0.15
+2026-09-04T14:35:26 | INFO     | app.api.websocket              | connect              | WebSocket client connected. Total: 1
+2026-09-18T10:40:05 | INFO     | root                           | setup_logging        | Logging configured: level=INFO, dir=logs
+2026-09-18T10:40:05 | INFO     | app.main                       | lifespan             | SpliceTracker starting up
+2026-09-18T10:40:05 | INFO     | app.main                       | lifespan             | Database initialized
+2026-09-18T10:40:05 | INFO     | app.main                       | lifespan             | Event bus ready (11 event types)
+2026-09-18T10:40:05 | INFO     | app.main                       | lifespan             | WebSocket heartbeat started (interval=5s)
+2026-09-18T10:40:05 | INFO     | app.main                       | lifespan             | SIMULATION_MODE is enabled — starting simulation
+2026-09-18T10:40:05 | INFO     | app.main                       | lifespan             | Frames directory: data\frames
+2026-09-18T10:40:05 | INFO     | app.main                       | lifespan             | SpliceTracker ready
+2026-09-18T10:40:05 | INFO     | app.simulation                 | _run_simulation      | Simulation started: splices=5, interval=10.0s, anomaly_prob=0.15
+2026-09-18T10:40:55 | INFO     | app.api.websocket              | connect              | WebSocket client connected. Total: 1
+2026-09-18T10:40:55 | INFO     | app.api.websocket              | connect              | WebSocket client connected. Total: 2
+2026-09-18T10:41:51 | INFO     | app.api.websocket              | connect              | WebSocket client connected. Total: 3
+2026-09-18T10:41:52 | INFO     | app.api.websocket              | connect              | WebSocket client connected. Total: 4
+2026-09-18T13:56:38 | INFO     | app.api.websocket              | disconnect           | WebSocket client disconnected. Total: 3
+2026-09-18T13:56:38 | INFO     | app.api.websocket              | disconnect           | WebSocket client disconnected. Total: 2
+2026-09-18T13:56:38 | INFO     | app.api.websocket              | disconnect           | WebSocket client disconnected. Total: 1
+2026-09-18T13:56:38 | INFO     | app.api.websocket              | disconnect           | WebSocket client disconnected. Total: 0
+2026-09-18T14:24:54 | INFO     | app.api.websocket              | connect              | WebSocket client connected. Total: 1
+2026-09-18T14:24:54 | INFO     | app.api.websocket              | disconnect           | WebSocket client disconnected. Total: 0
+2026-09-18T14:26:31 | INFO     | app.api.websocket              | connect              | WebSocket client connected. Total: 1
+2026-09-18T14:26:40 | INFO     | app.api.websocket              | connect              | WebSocket client connected. Total: 2
+2026-09-18T14:27:11 | INFO     | app.api.websocket              | connect              | WebSocket client connected. Total: 3
+2026-09-18T14:27:51 | INFO     | app.api.websocket              | disconnect           | WebSocket client disconnected. Total: 2
+2026-09-18T14:28:07 | INFO     | app.api.websocket              | connect              | WebSocket client connected. Total: 3
+2026-09-18T14:28:47 | INFO     | app.api.websocket              | disconnect           | WebSocket client disconnected. Total: 2
+2026-09-18T14:50:42 | INFO     | app.api.websocket              | connect              | WebSocket client connected. Total: 3
+2026-09-18T14:51:22 | INFO     | app.api.websocket              | disconnect           | WebSocket client disconnected. Total: 2
+2026-09-18T14:54:32 | INFO     | app.api.websocket              | connect              | WebSocket client connected. Total: 3
+2026-09-18T14:54:57 | INFO     | app.api.websocket              | disconnect           | WebSocket client disconnected. Total: 2
+2026-09-18T15:09:38 | INFO     | app.api.websocket              | disconnect           | WebSocket client disconnected. Total: 1
+2026-09-18T15:09:39 | INFO     | app.api.websocket              | disconnect           | WebSocket client disconnected. Total: 0
+2026-09-18T15:11:18 | INFO     | app.api.websocket              | connect              | WebSocket client connected. Total: 1
+2026-09-18T15:11:18 | INFO     | app.api.websocket              | connect              | WebSocket client connected. Total: 2
+2026-09-18T15:11:19 | INFO     | app.api.websocket              | connect              | WebSocket client connected. Total: 3
+2026-09-18T15:11:19 | INFO     | app.api.websocket              | connect              | WebSocket client connected. Total: 4
+2026-09-18T15:19:13 | INFO     | app.api.websocket              | disconnect           | WebSocket client disconnected. Total: 3
+2026-09-18T15:19:13 | INFO     | app.api.websocket              | disconnect           | WebSocket client disconnected. Total: 2
+2026-09-20T13:59:30 | INFO     | root                           | setup_logging        | Logging configured: level=INFO, dir=logs
+2026-09-20T13:59:30 | INFO     | app.main                       | lifespan             | SpliceTracker starting up
+2026-09-20T13:59:30 | INFO     | app.main                       | lifespan             | Database initialized
+2026-09-20T13:59:30 | INFO     | app.main                       | lifespan             | Event bus ready (11 event types)
+2026-09-20T13:59:30 | INFO     | app.main                       | lifespan             | WebSocket heartbeat started (interval=5s)
+2026-09-20T13:59:30 | INFO     | app.main                       | lifespan             | SIMULATION_MODE is enabled — starting simulation
+2026-09-20T13:59:30 | INFO     | app.main                       | lifespan             | Frames directory: data\frames
+2026-09-20T13:59:30 | INFO     | app.main                       | lifespan             | SpliceTracker ready
+2026-09-20T13:59:30 | INFO     | app.simulation                 | _run_simulation      | Simulation started: splices=5, interval=10.0s, anomaly_prob=0.15
+2026-09-20T14:02:28 | INFO     | app.api.websocket              | connect              | WebSocket client connected. Total: 1
+2026-09-20T14:02:28 | INFO     | app.api.websocket              | connect              | WebSocket client connected. Total: 2
+2026-09-20T14:08:08 | INFO     | app.api.websocket              | connect              | WebSocket client connected. Total: 3
+2026-09-20T14:08:08 | INFO     | app.api.websocket              | connect              | WebSocket client connected. Total: 4
+2026-09-20T15:03:09 | INFO     | app.api.websocket              | disconnect           | WebSocket client disconnected. Total: 3
+2026-09-20T15:03:09 | INFO     | app.api.websocket              | disconnect           | WebSocket client disconnected. Total: 2
+2026-09-21T14:07:41 | INFO     | root                           | setup_logging        | Logging configured: level=INFO, dir=logs
+2026-09-21T14:07:41 | INFO     | app.main                       | lifespan             | SpliceTracker starting up
+2026-09-21T14:07:41 | INFO     | app.main                       | lifespan             | Database initialized
+2026-09-21T14:07:41 | INFO     | app.main                       | lifespan             | Event bus ready (11 event types)
+2026-09-21T14:07:41 | INFO     | app.main                       | lifespan             | WebSocket heartbeat started (interval=5s)
+2026-09-21T14:07:41 | INFO     | app.main                       | lifespan             | SIMULATION_MODE is enabled — starting simulation
+2026-09-21T14:07:41 | INFO     | app.main                       | lifespan             | Frames directory: data\frames
+2026-09-21T14:07:41 | INFO     | app.main                       | lifespan             | SpliceTracker ready
+2026-09-21T14:07:41 | INFO     | app.simulation                 | _run_simulation      | Simulation started: splices=5, interval=10.0s, anomaly_prob=0.15
+2026-09-21T14:09:02 | INFO     | app.api.websocket              | connect              | WebSocket client connected. Total: 1
+2026-09-21T14:09:02 | INFO     | app.api.websocket              | connect              | WebSocket client connected. Total: 2
+2026-09-21T14:09:04 | INFO     | app.api.websocket              | connect              | WebSocket client connected. Total: 3
+2026-09-21T14:09:04 | INFO     | app.api.websocket              | connect              | WebSocket client connected. Total: 4
+2026-09-21T14:50:20 | INFO     | app.api.websocket              | disconnect           | WebSocket client disconnected. Total: 3
+2026-09-21T14:50:20 | INFO     | app.api.websocket              | disconnect           | WebSocket client disconnected. Total: 2
