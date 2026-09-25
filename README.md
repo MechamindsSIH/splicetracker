@@ -45,7 +45,7 @@ SpliceTracker is an industrial conveyor-belt splice monitoring and predictive-ma
 
 ```
 
-##images
+Images
 <img width="1280" height="705" alt="WhatsApp Image 2026-09-25 at 8 11 07 AM" src="https://github.com/user-attachments/assets/f31c5236-65cf-4429-975b-e61950cfd9e2" />
 
 
