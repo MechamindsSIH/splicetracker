@@ -1,4 +1,4 @@
-# SpliceTracker — Industrial Conveyor Belt Splice Monitoring System
+# SpliceTracker — Industrial Conveyor Belt Spice Monitor System
 
 ## Overview
 
