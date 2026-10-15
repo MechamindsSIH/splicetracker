@@ -2,7 +2,7 @@
 
 ## System Overview
 
-SpliceTracker is a multi-modal industrial splice monitoring system that combines computer vision, thermal analysis, conductive sensing, and mechanical vibration analysis to detect, classify, and track conveyor belt splice conditions over time.
+SpliceTracker is a multi-modal industrial splice monitoring system that combines computer vision, theral analysis, conductive sensing, and mechanical vibration analysis to detect, classify, and track conveyor belt splice conditions ovre time.
 
 ## Full Pipeline
 
